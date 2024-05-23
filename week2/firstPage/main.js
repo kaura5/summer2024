@@ -55,3 +55,22 @@ for (let i = 0; i < data.length; i++) {
   df.append(personName);
 }
 main.append(df);
+
+//Task1: list all the user named with their emails on the page in a single string (in a li)
+
+//Task2: list all names under a h4 make sure all the names are upper case
+
+//Task3: Create a function that finds a user by their email address and returns their details.
+
+//Task4: Create a function that counts the number of users in the data.
+
+//Task5:
+let shoppingList = [
+  { name: "Milk", price: 4.99 },
+  { name: "Apples", price: 2.99 },
+  { name: "Eggs", price: 3.99 },
+];
+
+//Imagine these are the things in someone’s cart. Create a function, which will iterate over the list and provide the total due to the customer.
+
+//Note: Task 1, 2 are related to DOM. Task 4 and 5 you can test it in terminal or create elements in DOM (your wish)
