@@ -34,6 +34,9 @@ for (let i = 0; i <= pets.animals.length - 1; i++) {
 //Prctice: loop through the numbers and gave me the total.
 let number = [25, 20, 30, 40];
 
+// sum += number[i];
+//sum = sum + number[i];
+
 //for in loop
 
 for (let prop in movie) {
@@ -107,3 +110,6 @@ for (let prop of data) {
   console.log(fullAddress);
 }
 //loop over the data and print the full object if person is from "Vietnam"
+
+//if (prop.country == "Vietnam"){}
+//PaKisTan

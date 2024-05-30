@@ -54,6 +54,7 @@ for (let i = 0; i < data.length; i++) {
   personName.textContent = data[i].name;
   df.append(personName);
 }
+
 main.append(df);
 
 //Task1: list all the user named with their emails on the page in a single string (in a li)
