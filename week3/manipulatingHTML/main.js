@@ -1,3 +1,4 @@
+// function init() {
 //how to grab an element from DOM
 //querySelector, querySelectorAll, getElementById
 
@@ -113,4 +114,6 @@ document.querySelector("li").classList.replace("firtItem", "secondItem");
 
 //toggle class
 //want to hide or show an element
-document.querySelector("li").classList.toggle("firtItem");
+document.querySelector("li").classList.toggle("firstItem");
+// }
+// document.addEventListener("DOMContentLoaded", init);

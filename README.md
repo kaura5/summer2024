@@ -10,4 +10,6 @@ intro of variables, control flow, functions, array and objects
 - HTML Manupulation
 ## Week4
 - Webpage of Products
-- 
+- Events adding and removing
+- Event Bubbling and PRopagation
+- Prevent Default
