@@ -11,5 +11,6 @@ intro of variables, control flow, functions, array and objects
 ## Week4
 - Webpage of Products
 - Events adding and removing
-- Event Bubbling and PRopagation
+- Event Bubbling and Propagation
 - Prevent Default
+- Example
