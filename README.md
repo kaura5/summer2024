@@ -14,3 +14,7 @@ intro of variables, control flow, functions, array and objects
 - Event Bubbling and Propagation
 - Prevent Default
 - Example
+## Week5-6
+- Namespaces
+- ES Modules
+- Async vs sync

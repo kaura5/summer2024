@@ -1,20 +1,14 @@
+import { cardItem } from "./card.js";
+import { data } from "./data.js";
 function init() {
   let cards = document.querySelector(".cards");
 
-  df = new DocumentFragment();
+  let df = new DocumentFragment();
 
   data.results.forEach(function (item) {
     let card = document.createElement("div");
     card.classList.add("card");
-
-    let cardInfo = `
-    <div class="product">
-    <img src=${item.thumbnail} alt=${item.title}>
-    </div>
-        <p>$${item.price}.00</p>
-        <h2>${item.title}</h2>
-    </div>
-    `;
+    let cardInfo = cardItem(item);
 
     card.innerHTML = cardInfo;
 
