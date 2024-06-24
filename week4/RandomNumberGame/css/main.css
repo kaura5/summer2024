@@ -69,3 +69,28 @@ form {
     width: 100%;
     margin-top: 2rem;
 }
+
+.guess {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+#attempts {
+    color: #666;
+    font-size: 1.7em;
+    line-height: 0%;
+    margin-top: 0;
+}
+
+#message {
+    color: #666;
+    font-size: 1.5em;
+    line-height: 0%;
+    margin-top: 0;
+    padding-bottom: .65em;
+}
