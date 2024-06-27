@@ -18,3 +18,13 @@ intro of variables, control flow, functions, array and objects
 - Namespaces
 - ES Modules
 - Async vs sync
+## Week7
+- Async vs sync
+- Promises
+- Fetch
+## Week8
+- Promises
+- URL parts
+- JSON, XML, AJAX calls
+- request and response object
+- header object
