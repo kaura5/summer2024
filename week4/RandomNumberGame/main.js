@@ -5,8 +5,6 @@ function init() {
 
   guessButton.addEventListener("click", guessNumber);
 
-  let df = new DocumentFragment();
-
   function counter() {
     let count = 0;
 
@@ -29,7 +27,6 @@ function init() {
 
   let attempt = document.getElementById("attempt");
   const myCounter = counter();
-  // attempt.append(df);
 
   function updateAttempt() {
     myCounter.increase();
@@ -44,32 +41,37 @@ function init() {
     message.innerHTML = "";
   }
 
+  
+
   function guessNumber(ev) {
     ev.preventDefault();
     let value = inputNum.value.trim();
 
     if (value !== "" && value > 0 && value < 101) {
       let guess = parseInt(value);
+      let alertMessage = document.getElementById('alertMessage');
 
       if (guess > randomNumber) {
-        alert("Too high, try again!");
+        alertString = "Too high, try again!";
         inputNum.value = "";
         updateAttempt();
       } else if (guess < randomNumber) {
-        alert("Too low, try again!");
+        alertString = "Too low, try again!";
         inputNum.value = "";
         updateAttempt();
       } else {
-        alert("Congratulations! You guessed the right number!");
+        alertString = "Congratulations! You guessed the right number!";
         randomNumber = Math.floor(Math.random() * 100) + 1;
         inputNum.value = "";
         resetAttempt();
       }
     } else {
-      alert("Please enter a number between 1 and 100!");
+      alertString = "Please enter a number between 1 and 100!";
       inputNum.value = "";
     }
+    alertMessage.innerHTML = alertString;
   }
 }
+
 
 window.addEventListener("DOMContentLoaded", init);
