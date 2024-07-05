@@ -8,20 +8,23 @@
     <link rel="icon" type="image/x-icon" href="./favicon-32x32.png" />
 </head>
 <body>
-    <h1>Random Number Game</h1>
-    <p>The most fun that you will have in your entire life..</p>
-    <form>
-        <label for="inputNum">Guess the generated number between 1 and 100.</label>
-        <div>
-            <input id="inputNum" type="text" placeholder="Take a guess.." >
-            <button id="guessButton">Submit</button>
-        </div>
-    </form>
-    <div class="guess">
-        <p id="message"></p>
-        <p id="attempt"></p>
-    </div>
+    <section>
+        <h1>Random Number Game</h1>
+        <p>The most fun that you will have in your entire life..</p>
+        <form>
+            <label for="inputNum">Guess the generated number between 1 and 100.</label>
+            <div>
+                <input id="inputNum" type="text" placeholder="Take a guess.." >
+                <button id="guessButton">Submit</button>
+            </div>
+        </form>
+        
+    </section>
     <footer>
+        <div class="guess">
+            <p id="message"></p>
+            <p id="attempt"></p>
+        </div>
         <p id="alertMessage"></p>
     </footer>
 </body>

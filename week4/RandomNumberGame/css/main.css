@@ -3,13 +3,15 @@ body {
     background-color: #f0f0f0;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    height: 100vh;
     justify-content: center;
-    text-align: center;    
 }
 
 input {
     padding: 12px 20px;
-    margin: 8px 0;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
@@ -17,47 +19,37 @@ input {
 
 
 button {
-    background-color: #4CAF50;
+    background-color: #5661ff;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color:#4d57e3;
 }
 
 h1 {
     color: #333;
-    margin-top: 20rem;
     font-size: 4rem;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
 }
 
 p {
     color: #666;
     font-size: 1.7em;
-    line-height: 0%;
-    margin-top: 0;
-
 }
+
 
 label {
     color: #333;
     font-size: 1.2em;
     margin: 1rem;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-content: center;
-    align-items: center;
 }
 
 form {
@@ -67,40 +59,38 @@ form {
     text-align: center;
     align-items: center;
     width: 100%;
-    margin-top: 2rem;
 }
 
-.guess {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 3rem;
-}
 
 #attempts {
     color: #666;
-    font-size: 1.7em;
-    line-height: 0%;
-    margin-top: 0;
+    font-size: 1.5em;
 }
 
-#message {
-    color: #666;
-    font-size: 1.5em;
-    line-height: 0%;
-    margin-top: 0;
-    padding-bottom: .65em;
-}
 
 #alertMessage {
-    color: rgb(250, 40, 40);
-    font-size: 16px;
+    color: rgb(247, 56, 38);
+    font-size: 20px;
+    font-weight: bold;
 }
 
 footer {
-    position: absolute;
-    bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    position: fixed;
+    bottom: 10%;
+    width: 100vw;
 }
+
+section {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
