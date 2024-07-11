@@ -25,3 +25,7 @@ intro of variables, control flow, functions, array and objects
 ## Week8
 - Fetched JSON and blob data
 ## Week9
+- Movie Database
+## Week10
+- SPA
+- History API
