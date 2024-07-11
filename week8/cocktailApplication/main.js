@@ -1,4 +1,5 @@
 
+// import { cardItem } from "./card.js";
 
 (()=> {
     document.getElementById("findButton").addEventListener("click", searchHandle);
@@ -29,20 +30,28 @@ function findCocktail(userInput) {
                 throw new Error("Something ain't right dog");
             }
 
+            // return res.json();
             return Promise.all([res.clone().json(), res.blob()]);
         })
+
+
+        // THIS IS A CHAT GPT INSPIRED RESPONSE CLONE APPROACH 
+
         .then(([jsonData, blobData]) => {
 
             console.log(`JSON Data:`, jsonData);
 
             console.log(`Blob Data:`, blobData);
+
+            const blobUrl = URL.createObjectURL(blobData);
+            console.log(`Blob URL:`, blobUrl);
+
+            const img = document.createElement(`img`);
+            
         })
+        
 
-
-
-
-
-
+        // THIS IS A FETCH FOR THE COCKTAIL NAMES
         
         // .then((data) => {
         //     console.log(data);
@@ -57,8 +66,32 @@ function findCocktail(userInput) {
 
         //     cocktailName.innerHTML = "";
         //     cocktailName.append(df);
+
         // })
+
+    
         .catch((err) => {
             console.log(err);
         });
+
 }
+
+// function init() {
+//     let cards = document.querySelector(".cards");
+  
+//     let df = new DocumentFragment();
+  
+//     data.results.forEach(function (drink) {
+//       let card = document.createElement("div");
+//       card.classList.add("card");
+//       let cardInfo = cardItem(drink);
+  
+//       card.innerHTML = cardInfo;
+  
+//       df.append(card);
+//     });
+  
+//     cards.append(df);
+//   }
+//   window.addEventListener("DOMContentLoaded", init);
+  
