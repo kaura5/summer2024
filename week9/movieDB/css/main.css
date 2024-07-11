@@ -1,0 +1,28 @@
+body{
+    background-color: aliceblue;
+}
+header{
+    background-color: darkslategray;
+    color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+.card{
+    /* width: 20vw; */
+    box-shadow: 0 4px 6px rgba(7, 34, 47, 0.4);
+    margin: 1rem 0;
+}
+.details{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+}
+.searchResults{
+    width: 50vw;
+}

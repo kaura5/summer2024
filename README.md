@@ -23,8 +23,5 @@ intro of variables, control flow, functions, array and objects
 - Promises
 - Fetch
 ## Week8
-- Promises
-- URL parts
-- JSON, XML, AJAX calls
-- request and response object
-- header object
+- Fetched JSON and blob data
+## Week9
