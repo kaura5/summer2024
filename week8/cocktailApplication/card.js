@@ -3,7 +3,7 @@ function init() {
   
     let df = new DocumentFragment();
   
-    data.results.forEach(function (item) {
+    data.drinks.forEach(function (drink) {
       let card = document.createElement("div");
       card.classList.add("card");
       let cardInfo = cardItem(item);

@@ -25,39 +25,49 @@ function findCocktail(userInput) {
       if (!res.ok) {
         throw new Error("Something ain't right dog");
       }
-      return res.json();
-      //   return Promise.all([res.clone().json(), res.blob()]);
-    })
-    // .then(([jsonData, blobData]) => {
-    //   console.log(`JSON Data:`, jsonData);
 
-    //   console.log(`Blob Data:`, blobData);
-    //   //your data
-    //   //loop over the data
-    //   //time to display an image => call another function imageFetcher(item.strDrinkThumb)
-    //   // (will fetch and convert to blob and return a url)
+      return Promise.all([res.clone().json(), res.blob()]);
+    })
+    .then(([jsonData, blobData]) => {
+      console.log(`JSON Data:`, jsonData);
+
+      console.log(`Blob Data:`, blobData);
+    })
+
+    // .then((data) => {
+    //     console.log(data);
+    //     let cocktailName = document.getElementById ("cocktailName");
+    //     let df = new DocumentFragment();
+
+    //     data.drinks.forEach(drink => {
+    //         console.log(drink.strDrink);
+    //         cocktailName.textContent = `${drink.strDrink}`;
+    //         df.append(cocktailName);
+    //     });
+
+    //     cocktailName.innerHTML = "";
+    //     cocktailName.append(df);
     // })
-
-    .then((data) => {
-      console.log(data);
-      let cocktailName = document.querySelector(".card");
-      let df = new DocumentFragment();
-
-      data.drinks.forEach((drink) => {
-        console.log(drink.strDrink);
-        // let textNode = document.createTextNode(drink.strDrink);
-        // cocktailName.append(textNode);
-        // cocktailName.textContent = `${drink.strDrink}`;
-        let drinkName = document.createElement("h2");
-        drinkName.className = "cocktailName";
-        drinkName.textContent = drink.strDrink;
-        df.append(drinkName);
-      });
-
-      cocktailName.innerHTML = "";
-      cocktailName.append(df);
-    })
     .catch((err) => {
       console.log(err);
     });
 }
+
+// function init() {
+//     let cards = document.querySelector(".cards");
+
+//     let df = new DocumentFragment();
+
+//     data.results.forEach(function (drink) {
+//       let card = document.createElement("div");
+//       card.classList.add("card");
+//       let cardInfo = cardItem(drink);
+
+//       card.innerHTML = cardInfo;
+
+//       df.append(card);
+//     });
+
+//     cards.append(df);
+//   }
+//   window.addEventListener("DOMContentLoaded", init);

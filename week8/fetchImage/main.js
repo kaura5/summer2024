@@ -25,3 +25,4 @@ function displayImage(urlImage) {
 }
 
 window.addEventListener("DOMContentLoaded", init);
+ 
