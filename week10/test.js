@@ -12,3 +12,4 @@ for (let i = 0; i < nameElement.length; i++) {
   });
 }
 console.log("GuestList", guests);
+
