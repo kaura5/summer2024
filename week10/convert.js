@@ -32,3 +32,6 @@ fs.readFile('data.json', 'utf8', (err, data) => {
     console.log('CSV file has been saved.');
   });
 });
+
+
+// run "node convert.js" in the terminal while on week10
