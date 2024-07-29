@@ -1,0 +1,159 @@
+/* 
+This is a CSS comment
+Shortcut for adding a comment is cmnd + /
+ */
+
+
+ /* If you add font-family like this is will use whichever fonts are available on the users device them from first to last */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkslategray;
+    /* adding a background image */
+    background-image: url(../images/white_brick_wall.png);
+ }
+
+
+
+ h1 {
+    color: cadetblue;
+ }
+
+ p {
+    background-color: antiquewhite;
+ }
+
+
+ /* Selecting multiple elements  */
+ h1, h2, h3, h4 {
+    text-decoration: underline;
+ }
+
+
+ /* Selecting child elements */
+ nav ul {
+    list-style: none;
+
+ }
+
+ nav ul a {
+    color: darkslategray;
+    text-decoration: none;
+    font-size: 1.5rem;
+    /* 1.5rem (html font size) = 16px (default becasue its not set) * 1.5 = 24px */
+ }
+
+
+/* Selecting element with ID value */
+/* As a best practice, try to avoid using IDs for styles */
+ #treatoftheweek {
+    /* background-color: cadetblue; */
+    /* color image repeat position-x position-y */
+    background: cadetblue url(../images/bread.jpg) no-repeat center;
+    background-size: cover;
+    font-size: 1.25rem;
+    /* 1.25 * 16 px = 20px */
+    padding: 1em;
+    /* 1 * 20px (element font size) = 20px */
+    /* viewport based units */
+    /* width: 100vw; */
+    width: 50%;
+ }
+
+.blue-link {
+    background-color: darkslategray;
+    color: antiquewhite;
+    text-decoration: none;
+} 
+
+.large-text {
+    font-size: 24px;
+}
+
+.white-text {
+    color: antiquewhite;
+}
+
+
+/* Combinators */
+/* Direct child selector - will only select the direct child of the parent */
+article>p {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.5;
+    text-transform: lowercase;
+    text-align: center;
+}
+
+/* Adjacent sibling selector - selects the element that is the very next sibling to the element, if any exist */
+h3+ul {
+    border:1px solid black;
+}
+
+/* Sibling selector  */
+h3~p {
+    text-transform: uppercase;
+}
+
+/* Attribute Selector */
+[href="treatoftheweek"] {
+    font-weight: bold;
+}
+
+[src$=".jpg"] {
+    border: 8px solid darkslategray;
+}
+
+/* Using Psudeo classes */
+/* Styling the navigation */
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    background-color: antiquewhite;
+    /* horizontal, verticle, blur, spread, color */
+    box-shadow: -2px 2px 4px 2px black;
+}
+
+nav ul .current,
+nav ul a:hover,
+nav ul a:focus {
+    text-decoration: underline;
+}
+
+nav ul a:active {
+    box-shadow: 0 0 4px 2px black;
+}
+
+/* Position selectors */
+/* first-child and last-child */
+
+aside ul li:first-child {
+    font-weight: bold;
+}
+
+section ol li:last-child {
+    font-weight: bold;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* nth-child selector - even/odd */
+tbody tr:nth-child(even) {
+    /* hex color value with 6 characters */
+    background-color: #d5836c;
+}
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid #000;
+}
+
+/* using formula in nth-child selector */
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Specifity */
+/* formula: inline style, ID, class, tag-name */
+

@@ -1,0 +1,151 @@
+ 
+ 
+ /**************************************************** 
+                    Global Styles
+ *****************************************************/
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #1e1d24;
+}
+
+.main {
+    background-color: #1e1d24;
+    background-image: url(../images/background.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.main img {
+    height: 100vh;
+    margin: 0 auto;
+    align-items: center;
+}
+
+
+
+
+/* ------------------ TYPOGRAPHY ------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+h1 {
+    font-size: 5.063rem;
+    line-height: 5rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.intro h1 {
+    font-size: 4rem;
+}
+
+
+/* -------------------- CAT -------------------- */
+
+.cat {
+    position: absolute;
+    bottom: 60%; 
+    left: 80%; 
+    transform: translateX(-50%);
+    width: 50%; 
+    max-width: 200px; 
+    animation: bobbing 3s ease-in-out infinite; 
+}
+  
+  @keyframes bobbing {
+    0%, 100% {
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      transform: translateX(-50%) translateY(-10px); 
+    }
+}
+
+  .container {
+    position: relative;
+    width: 100%; 
+    height: auto; 
+}
+
+
+/* ------------------- MOBILE ------------------- */
+
+
+@media only screen and (max-width: 1100px) {
+
+    .cat {
+        position: absolute;
+        bottom: -25%; 
+        left: 80%; 
+        transform: translateX(-50%);
+        width: 50%; 
+        max-width: 200px; 
+        animation: bobbing 3s ease-in-out infinite; 
+    }
+      
+      @keyframes bobbing {
+        0%, 100% {
+          transform: translateX(-50%) translateY(0);
+        }
+        50% {
+          transform: translateX(-50%) translateY(-10px); 
+        }
+    }
+    
+      .container {
+        position: relative;
+        width: 100%; 
+        height: auto; 
+    }
+
+    .main {
+        background-image: none;
+    }
+
+    .main img {
+        height: 70vh;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+
+    .cat {
+        display: none;
+    }
+   
+}

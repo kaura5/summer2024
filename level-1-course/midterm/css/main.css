@@ -1,0 +1,167 @@
+/* –––––––––––––––––––– Box model site structure ––––––––––––––––––––– */
+
+html {
+    box-sizing: border-box;
+    }
+    *, *::before, *::after {
+    box-sizing: inherit;
+} 
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    font-size:16px;
+    background-color:#AAD4CF;
+}
+
+.container {
+    max-width: 100%;
+    margin: -2em 10em 1em 10em;
+    background-color: #D4E9E7;
+    padding-bottom: 1em;
+}
+
+
+/* –––––––––––––––––––––––––––––– Fonts –––––––––––––––––––––––––––––– */
+
+h1 {
+    color: white;
+    font-size: 2.5em; 
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h3 {
+    font-size: 1.3em;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+nav {
+    font-size: 1.3em;
+}
+
+article p {
+    font-size:.8em;
+}
+
+aside li {
+    font-size:.8em;
+}
+
+footer {
+    font-size: .8em;
+}
+
+
+/* ––––––––––––––––––––––– Navigation & header ––––––––––––––––––––––– */
+
+h1 {
+    background: url(../images/lone-starfish-wide.jpg) no-repeat center;
+    background-size:cover;
+    padding: 3em 3em 1.5em 3em;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    padding: 0em 4em 0em 4em;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.bar {
+    border-right: 2px solid rgb(176, 176, 176);
+}
+
+
+/* ––––––––––––––––––––––––––––––– Main ––––––––––––––––––––––––––––––– */
+
+main {
+    padding: .5em .5em;
+}
+
+
+/* ––––––––––––––––––––––––––– Main/Article ––––––––––––––––––––––––––– */
+
+article img {
+    min-width: 15%;
+    max-width: 22%;
+    float: left;
+    margin: 0em .8em .8em 0em;
+}
+
+
+/* –––––––––––––––––––––––––––– Main/Aside –––––––––––––––––––––––––––– */
+
+aside {
+    clear: left;
+    margin-top: 1.5em;
+}
+
+aside ul {
+    padding: 0em 0em 0em 1em;
+}
+
+
+/* ––––––––––––––––––––––––––––––– Form ––––––––––––––––––––––––––––––– */
+
+
+
+form {
+    padding: 1.5em 1em 1em 1em;
+    border: 2px solid black
+}
+
+input {
+    display: block;
+    margin-bottom: 1em;
+}
+
+#yourname, #youremail {
+    border-style: hidden;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 2px;
+}
+
+#yourmessage {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+}
+
+#visit label, input {
+    display: inline-block;
+}
+
+
+form button {
+    border: 1px solid black;
+    padding: 6px;
+    font-size: .7em;
+    background-color:#D4E9E7;
+    margin-top: .5em;
+}
+
+/* –––––––––––––––––––––––––––––– Footer –––––––––––––––––––––––––––––– */
+
+footer {
+    padding: 1em 2em .5em 0em;
+    text-align: right;
+}
+

@@ -1,0 +1,750 @@
+ 
+ 
+ /**************************************************** 
+                    Global Styles
+ *****************************************************/
+
+
+/* ------------------ TYPOGRAPHY ------------------ */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+h1 {
+    font-size: 5.063rem;
+    line-height: 5rem;
+}
+
+h2 {
+    font-size: 3.375rem;
+}
+
+h3 {
+    font-size: 2.25rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+p {
+    margin: 1em 0;
+}
+
+.intro h1 {
+    font-size: 4rem;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5em;
+}
+
+
+
+/* ------------------- BUTTONS -------------------- */
+
+.shader a {
+    color: #222;
+    text-decoration: none;
+    display:inline-block;
+    padding: 1.5em 1.5em;
+    background-color: #c78c06;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    font-size: 1.3rem;
+}
+
+ .intro a i{
+    padding-left: .5em;
+ }
+
+.intro a:hover,
+.intro a:focus {
+    background-color: #ffe6ac;
+}
+
+.shader a:hover,
+.shader a:focus {
+    color: #c78c06;
+}
+
+.info a {
+    color: white;
+    text-decoration: none;
+    padding: 1.2em;
+    background-color: #222;
+    font-size: 1.3rem;
+}
+
+.info a:hover,
+.info a:focus {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.info a i {
+    padding-left: .5em;
+}
+
+.vision a {
+    color: white;
+    text-decoration: none;
+    padding: 1.2em;
+    background-color: #222;
+    font-size: 1.3rem;
+    border: 1px solid #c78c06;
+}
+
+.vision a:hover,
+.vision a:focus {
+    background-color: #c78c06;
+    color: #222;
+}
+
+.vision a i {
+    padding-left: .5em;
+    margin: 2em 0 2em 0;
+}
+
+form button {
+    border: 1px solid #c78c06;
+    color: #c78c06;
+    padding: .3em;
+    font-size: 1.5em;
+    background-color:#222;
+    margin-top: .5em;
+}
+
+form button:hover,
+form button:focus {
+    background-color: #c78c06;
+    color: #222;
+}
+
+
+
+/* ------------------ NAVIGATION ------------------ */
+
+.nav-box {
+    background-color: #222;
+    padding: 1em;
+}
+
+nav img {
+    display: flex;
+}
+
+nav {
+    background-color: #222;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.logo {
+    background-color: #c78c06;
+} 
+
+nav a,
+nav a:link,
+nav a:visited {
+    color: #c78c06;
+    padding: 1em 0;
+}
+
+nav a:hover,
+nav a:focus {
+    color: #222;
+}
+
+nav a.current,
+nav a:link.current,
+nav a:visited.current {
+    color: #222;
+}
+
+nav ul a,
+nav ul a:link,
+nav ul a:visited {
+    display: block;
+    text-decoration: none;
+}
+
+nav ul a:hover,
+nav ul a:focus,
+nav ul a.current {
+    background-color: #c78c06;
+} 
+
+nav ul li {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+}
+
+#search {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.search-bttn { 
+    display:inline-block;
+    padding: 5px 5px;
+    border: 1.5px solid #c78c06;
+    background-color: #222;
+    color: #c78c06;
+    font-size: 15px;
+}
+
+.search-bttn:hover,
+.search-bttn:focus {
+    background-color: #c78c06;
+    color: #222;
+}
+
+
+
+/* ---------------- HEADER SECITON -------------- */
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.max-mar {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hundo-p {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.intro {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+    color: white;
+    padding-top: 2em;
+}
+
+.shader {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+.hero-box {
+    padding: .5em .5em 0 1em;
+}
+
+
+
+/* ---------------- ABOUT SECITON -------------- */
+
+#about {
+    background-color: #ffe6ac;
+}
+
+#about img {
+    width: 100%;
+    height: 100%;
+}
+
+.about-image {
+    padding: 1em;
+}
+
+.about {
+    padding: 0 1em 1em 1em;
+}
+
+
+
+/* --------------- SERVICES SECITON ------------- */
+
+.services h2 {
+    padding: 0 0 .3em .2em;
+}
+
+.card img {
+    width: 100%;
+}
+
+.info {
+    padding: 1em;
+}
+
+.services {
+    max-width: 1200px;
+}
+
+
+
+/* --------------- VISION SECITON ------------- */
+
+.vision {
+    background-image: url("../images/vision.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    margin: 0 auto;
+}
+
+.invision {
+    max-width: 1200px;
+}
+
+
+
+/* ----------------- TEAM SECITON --------------- */
+
+.teams img {
+    width: 100%;
+    height: 100%;
+}  
+
+.teams h2 {
+    padding: 0 0 .3em .2em;
+}
+
+.teams {
+    margin: 0 1em;
+}
+
+.team-card {
+    padding:0 1em 1em 1em;
+}
+
+.team-card h4 {
+    padding-bottom: .2em;
+    border-bottom: solid #c78c06 2.5px;
+} 
+
+#team {
+    max-width: 1200px;
+} 
+
+.block {
+    background-color: #ffe6ac;
+}
+
+
+
+/* ----------------- CONTACT SECITON --------------- */
+
+.form input {
+    width: 100%;
+}
+
+.form {
+    padding: 0 1em 1em 1em;
+}
+
+.form input {
+    display: block;
+    margin-bottom: 1em;
+}
+
+#fullname, #email {
+    box-sizing: border-box;
+    width: 100%;
+    padding: .5em;
+}
+
+#message {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 4em;
+}
+
+#visit label, input {
+    display: inline-block;
+}
+
+#contact h2 {
+    padding: 1.2em 0 .5em .2em;
+}
+
+
+
+/* ------------------ HOURS SECITON ----------------- */
+
+table thead tr:nth-child(1) {
+    background-color: #ffe6ac;
+    border: solid black 1px;
+}
+
+table th:nth-child(n),
+table td:nth-child(n) {
+    border: 1px solid #000;
+    padding: 1em;
+}
+
+table {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hours {
+    padding: 0 1em 1em 1em;
+}
+
+
+
+/* ----------------- LOCATION SECITON --------------- */
+
+.map {
+   position: relative;
+   width: 100%;
+   height: 400px;
+   overflow: hidden;    
+}
+
+.map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.location {
+    padding: 0 1em 1em 1em;
+}
+
+
+
+/* --------------------- FOOTER -------------------- */
+
+.footer {
+    background-color: #222;
+}
+
+.cr {
+    color:#c78c06;
+}
+
+.src {
+    color: #c78c06;
+}
+
+.src a {
+    color: #c78c06;
+}
+
+.footer-text {
+    padding: 1em;
+}
+
+
+
+ /**************************************************** 
+                    Mobile Styles
+ *****************************************************/
+
+ @media screen and (max-width:760px) {
+    
+
+    .intro {
+        padding: 3em 0 4em 0;
+    }
+
+    .about h2 {
+        padding-bottom: .5em;
+    }
+
+    .about p:last-child {
+        padding-bottom: 1em;
+    }
+
+    .card p {
+        padding-bottom: 2em;
+    }
+
+    .info h3 {
+        padding-bottom: .5em;
+    }
+    
+    .card {
+        margin: 1em;
+        padding-bottom: 1.5em;
+        background-color: #ffe6ac;
+    }
+
+    .team-card {
+        margin-bottom: 1em;
+        background-color: #ffe6ac;
+    }
+    
+    .vision-text {
+        margin: 1em;
+        padding: 1em;
+    }
+
+    .footer {
+        padding-top: 1em;
+    }
+
+    .bob img {
+        border-top: solid white 1em;
+    }
+
+ }
+
+
+
+  /**************************************************** 
+                    Desktop Styles
+ *****************************************************/
+
+ @media screen and (min-width:760px) {
+     
+    html {
+        font-size: 16px;
+    }
+
+
+
+  /* ------------------ NAVIGATION ------------------ */
+
+    nav ul {
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+    }
+  
+    li .logo {
+        background-color: #222;
+    }
+
+   .logo {
+        pointer-events: none;
+    }
+
+    nav li {
+        padding: 0 1em;
+    }
+
+
+
+    /* ---------------- HEADER SECITON -------------- */
+
+    .intro {
+        background-position: 0 60%;
+        padding: 5% 0 7% 0;
+    }
+
+    .hero-box h1 {
+        
+    }
+
+
+
+    /* ---------------- ABOUT SECITON -------------- */
+
+    .yellow-bg {
+        background-color: #ffe6ac;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #about {
+        max-width: 1200px;
+    }
+
+    .about h2 {
+        padding-bottom: .2em;
+    }
+
+
+
+    /* --------------- SERVICES SECITON ------------- */
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        grid-gap: 15px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "one one one two two two"
+        "three three four four five five"
+        ;
+    }
+    
+    .cards .card:nth-child(1) {
+        grid-area:one;
+    }
+    
+    .cards .card:nth-child(2) {
+        grid-area:two;
+    }
+    
+    .cards .card:nth-child(3) {
+        grid-area:three;
+    }
+    
+    .cards .card:nth-child(4) {
+        grid-area:four;
+    }
+    
+    .cards .card:nth-child(5) {
+        grid-area:five;
+    }
+
+    .info a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.5em 0 1.5em 0;
+        background-color: #222;
+        text-align: center;
+    }
+
+    .card p {
+        padding-bottom: 1em;
+    }
+
+    .info h3 {
+        padding-bottom: .3em;
+    }
+    
+    .cards {
+        margin: 1em;
+    }
+
+    .services {
+        padding-bottom: .5em;
+    }
+
+    .card {
+        background-color: #ffe6ac;
+    }
+
+
+
+    /* --------------- VISION SECITON ------------- */
+
+    .vision {
+        background-position: 0 40%;
+    }
+
+    .vision-text  {
+        max-width: 1200px;
+    }
+
+    .vision-text {
+        margin: 1em 0;
+        padding: 1em;
+    }
+
+
+
+    /* ----------------- TEAM SECITON -------------- */
+
+    #team h2 {
+        padding: .2em;
+    }
+
+    .block {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        grid-gap: 0;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        "one one one two two two"
+        "sun sun sun gear gear gear"
+        ;
+    }
+
+    .block .blocks:nth-child(1) {
+        grid-area: one;
+    }
+
+    .block .blocks:nth-child(2) {
+        grid-area: two;
+    }
+
+    .block .blocks:nth-child(3) {
+        grid-area: gear;
+    }
+
+    .block .blocks:nth-child(4) {
+        grid-area: sun;
+    }
+
+
+
+    /* --------------- CONTACT SECITON ------------- */
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .unit:nth-child(3) {
+        grid-column: 2/2;
+        grid-row: 1/1;
+    }
+
+    .unit:nth-child(2) {
+        grid-column: span 3;
+        grid-row: 2/2;
+    }
+    
+
+
+    /* -------------------- FOOTER ------------------ */
+
+    .footer-text {
+        font-size: .7em;
+        max-width: 1200px;
+    }
+
+    .footer-text a:hover,
+    .footer-text a:focus {
+        color:#ffe6ac;
+    }
+
+    .cr, .src {
+        padding: 0 1.5em;
+    }
+
+
+}   
+
+
+  
