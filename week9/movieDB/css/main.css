@@ -21,8 +21,8 @@ main{
 .details{
     display: flex;
     flex-wrap: wrap;
-    width: 50vw;
+    /* width: 50vw; */
 }
 .searchResults{
-    width: 50vw;
+    /* width: 50vw; */
 }

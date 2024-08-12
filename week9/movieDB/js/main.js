@@ -3,6 +3,7 @@ import { API_KEY } from "./key.js";
 function init() {
   loadData();
   //something
+  window.addEventListener("popstate", handlePopState);
 }
 
 function loadData() {
@@ -18,6 +19,7 @@ function loadData() {
     })
     .then((data) => {
       console.log(data);
+      history.pushState(data, "movies", "#trending_movies");
       displayData(data);
     })
     .catch((err) => {
@@ -69,6 +71,7 @@ function showDetails(ev) {
       })
       .then((data) => {
         console.log(data);
+        history.pushState(data, "cast", "#cast");
         displayCast(data);
       })
       .catch((err) => {
@@ -79,7 +82,7 @@ function showDetails(ev) {
   }
 }
 function displayCast(data) {
-  let details = document.querySelector(".details");
+  let details = document.querySelector(".searchResults");
   details.innerHTML = "";
   let df = new DocumentFragment();
 
@@ -96,6 +99,16 @@ function displayCast(data) {
     df.append(card);
   });
   details.append(df);
+}
+
+function handlePopState(ev) {
+  console.log(document.location);
+  console.log(ev);
+  if (document.location.hash === "#cast") {
+    displayCast(ev.state);
+  } else if (document.location.hash === "#trending_movies") {
+    displayData(ev.state);
+  }
 }
 
 window.addEventListener("DOMContentLoaded", init);
