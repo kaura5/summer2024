@@ -19,6 +19,7 @@ function loadData() {
     })
     .then((data) => {
       console.log(data);
+      // let data1={data" ", url:""}
       history.pushState(data, "movies", "#trending_movies");
       displayData(data);
     })
