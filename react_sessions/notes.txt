@@ -1,0 +1,16 @@
+Data Reactivity: The updating of an interface based on changes in state is known as Data Reactivity.
+
+DOM Diffing: The search for changes in the Virtual DOM based on changes in state is called DOM Diffing.
+
+old way was: create-react-app and that was using, Webpack and bael
+
+new using VIte: npm create vite@latest "my-app-name"
+//not including npm packages so its faster
+
+
+You can find 4 commands under scripts (package.json)
+dev: launching development version of react site, running in the site memory.
+//no compilation, or optimization or compression
+
+buid: will do ompilation, or optimization or compressio.
+it will create a new folder for us "dist"
