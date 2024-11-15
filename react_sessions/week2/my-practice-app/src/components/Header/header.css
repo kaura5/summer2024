@@ -1,0 +1,9 @@
+.masterHead{
+    display: flex;
+    background-color: #111;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 0;
+}
